@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM alpine:3.10 AS build
+FROM python:3.10-alpine
 WORKDIR /app
 RUN apk add --no-cache gcc musl-dev libffi-dev
 COPY requirements.txt .
